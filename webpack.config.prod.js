@@ -36,6 +36,7 @@ plugins.push(new ExtractTextPlugin("[name]-[hash].css"));
 // loaders
 let styleLoaders = [
   { loader: "css-loader", options : { sourceMap : false } },
+  { loader: "postcss-loader", options : { sourceMap : false } },
   { loader: "sass-loader",  options : { sourceMap : false } }
 ];
 

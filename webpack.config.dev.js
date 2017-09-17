@@ -16,13 +16,14 @@ plugins.push(new webpack.NamedModulesPlugin());
 plugins.push(new webpack.ProvidePlugin({
     $: "jquery",
     jQuery: "jquery",
-    Tether: 'tether'
+    Tether: "tether"
 }));
 plugins.push(new ExtractTextPlugin("[name].css"));
 
 // loaders
 let styleLoaders = [
   { loader: "css-loader", options : { sourceMap : true } },
+  { loader: "postcss-loader", options : { sourceMap : true } },
   { loader: "sass-loader",  options : { sourceMap : true } }
 ];
 
